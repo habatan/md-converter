@@ -7,10 +7,13 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+# 環境変数からフロントエンドのURLを取得（未設定の場合はローカル環境をデフォルトに）
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:5173")
+
 # フロントエンドからの通信を許可する設定（CORS）
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[frontend_url],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
