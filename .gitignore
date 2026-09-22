@@ -69,5 +69,6 @@ MANIFEST
 
 # Docker
 .docker/
-Dockerfile
+frontend/Dockerfile
+backend/Dockerfile
 docker-compose.yml
