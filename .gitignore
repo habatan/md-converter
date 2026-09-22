@@ -72,3 +72,6 @@ MANIFEST
 frontend/Dockerfile
 backend/Dockerfile
 docker-compose.yml
+
+# Backup
+backup/
