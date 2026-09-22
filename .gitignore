@@ -69,3 +69,5 @@ MANIFEST
 
 # Docker
 .docker/
+Dockerfile
+docker-compose.yml
